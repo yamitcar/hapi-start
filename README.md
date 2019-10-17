@@ -20,3 +20,21 @@ https://help.github.com/en/articles/creating-a-repository-from-a-template
 ### Env vars
 
 - PORT: defaults to 3000 if not set
+
+### Knex use
+
+Create migration:
+    
+    knex migrate:make migration_name
+    
+Run migrations:
+
+    knex migrate:latest
+    
+Create seed:
+
+    knex seed:make seed_name
+
+Run seeds:
+
+    knex seed:run

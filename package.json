@@ -1,5 +1,5 @@
 {
-  "name": "hapi-start",
+  "name": "hapi-start_crud-example",
   "version": "0.1.0",
   "description": "[Hapi](https://hapi.dev/) boilerplate",
   "main": "lib/index.js",
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kuryaki/hapi-start.git"
+    "url": "git+ssh://git@github.com/yamitcar/hapi-start.git"
   },
   "keywords": [
     "hapi",
     "template"
   ],
-  "author": "David Roncancio <david@roncancio.me>",
+  "author": "Yamit Cardenas <yamit.cardenas@gmail.com>",
   "bugs": {
-    "url": "https://github.com/kuryaki/hapi-start/issues"
+    "url": "https://github.com/yamitcar/hapi-start/issues"
   },
-  "homepage": "https://github.com/kuryaki/hapi-start/blob/master/README.md",
+  "homepage": "https://github.com/yamitcar/hapi-start/blob/master/README.md",
   "engines": {
     "node": ">=10.15",
     "npm": ">=6"
@@ -34,6 +34,8 @@
   "dependencies": {
     "@hapi/hapi": "18.x.x",
     "@hapi/basic": "5.x.x",
-    "@hapi/joi": "15.x.x"
+    "@hapi/joi": "15.x.x",
+    "knex": "^0.19.4",
+    "pg": "^7.12.1"
   }
 }
