@@ -12,12 +12,12 @@ module.exports = {
         client: 'postgres',
         connection: {
 
-            host: 'localhost',
+            host: process.env.DB_HOST,
 
-            user: 'postgres',
-            password: 'postgres',
+            user: process.env.DB_USER,
+            password: process.env.PASSWORD,
 
-            database: 'hapi_start_crud',
+            database: process.env.DB_NAME,
             charset: 'utf8'
 
         }

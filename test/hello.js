@@ -5,7 +5,7 @@ const Code = require('@hapi/code');
 const Lab = require('@hapi/lab');
 const Hapi = require('@hapi/hapi');
 
-const Hello = require('modules/hello');
+const Hello = require('modules/message');
 
 const lab = exports.lab = Lab.script();
 const { describe, it, before } = lab;
@@ -34,7 +34,7 @@ describe('Hello', () => {
 
         const request = {
             method: 'GET',
-            url: '/hello?language=es&subject=David'
+            url: '/message?language=es&subject=David'
         };
 
         const response = await server.inject(request);

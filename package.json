@@ -5,7 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index",
-    "test": "NODE_PATH=lib lab --verbose -La @hapi/code -t 100"
+    "test": "NODE_PATH=lib lab --verbose -La @hapi/code -t 100",
+    "migrate": "knex migrate:latest",
+    "unmigrate": "knex migrate:rollback",
+    "seed": "knex seed:run"
   },
   "repository": {
     "type": "git",
@@ -32,9 +35,10 @@
     "eslint-plugin-hapi": "4.x.x"
   },
   "dependencies": {
-    "@hapi/hapi": "18.x.x",
     "@hapi/basic": "5.x.x",
+    "@hapi/hapi": "18.x.x",
     "@hapi/joi": "15.x.x",
+    "dotenv": "^8.2.0",
     "knex": "^0.19.4",
     "pg": "^7.12.1"
   }
